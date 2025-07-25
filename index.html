@@ -15,7 +15,7 @@
   </head>
   <body class="bg-gray-900 text-white">
     <div class="min-h-screen flex">
-      <aside class="bg-gray-800 w-64 py-4 px-5">
+      <aside class="bg-gray-800 w-64 py-4 px-5  hidden lg:block">
         <div class="text-center text-2xl font-bold">
           <span class="text-blue-600">G:</span>
           <span class="uppercase">Platform</span>
@@ -57,82 +57,88 @@
 
       <main class="flex-1 p-6">
         <div class="grid grid-cols-4 mb-6">
-          <div class="col-span-3">
-            <div class="relative">
+          <div class="col-span-4 2xl:col-span-3">
+            <div class="relative rounded-2xl overflow-hidden">
               <img src="img/i1.jpg" class="rounded-2xl mx-auto" />
               <div
                 class="w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/90 to-transparent flex items-end px-8"
               >
-                <div class="w-full h-30 flex justify-between items-center">
-                  <div class="w-4/10"> <p class="text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique, adipisci sit. Ipsam, eaque autem. Neque eos quia
-                    earum nemo quos!
-                  </p></div>
-                 <div class="bg-blue-500 text-white flex justify-between items-center rounded-2xl px-4 py-2 gap-10">
-                  <span>Buy Now</span>
-                  <span>240,000 T</span>
-                 </div>
+                <div class="w-full h-30 hidden justify-between items-center md:flex ">
+                  <div class="w-4/10">
+                    <p class="text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Similique, adipisci sit. Ipsam, eaque autem. Neque eos
+                      quia earum nemo quos!
+                    </p>
+                  </div>
+                  <div
+                    class="bg-blue-500 text-white flex justify-between items-center rounded-2xl px-4 py-2 gap-10"
+                  >
+                    <span>Buy Now</span>
+                    <span>240,000 T</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-span-1 px-3">
+          <div class="col-span-4 px-3 2xl:col-span-1">
             <input
               placeholder="Search..."
-              class="w-full py-2 px-4 text-gray-500 rounded border border-gray-500 outline-0 bg-gray-800"
+              class="w-full py-2 px-4 text-gray-500 rounded border border-gray-500 outline-0 bg-gray-800 mt-10"
             />
             <h3 class="mt-8 mb-4 text-lg font-bold">Friends</h3>
-            <div class="flex items-center gap-4 mb-3">
-              <div>
-                <img src="img/i2.png" />
+            <div class="2xl:block flex gap-x-2 gap-y-4 flex-wrap justify-between">
+              <div class="flex items-center gap-4 mb-3">
+                <div>
+                  <img src="img/i2.png" />
+                </div>
+                <div>
+                  <p class="text-lg">Zeynab Jalalian</p>
+                  <button
+                    class="text-sm px-2 py-1 bg-blue-600 text-center rounded"
+                  >
+                    Join
+                  </button>
+                </div>
               </div>
-              <div>
-                <p class="text-lg">Zeynab Jalalian</p>
-                <button
-                  class="text-sm px-2 py-1 bg-blue-600 text-center rounded"
-                >
-                  Join
-                </button>
+              <div class="flex items-center gap-4 mb-3">
+                <div>
+                  <img src="img/i2.png" />
+                </div>
+                <div>
+                  <p class="text-lg">Zeynab Jalalian</p>
+                  <button
+                    class="text-sm px-2 py-1 bg-blue-600 text-center rounded"
+                  >
+                    Join
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="flex items-center gap-4 mb-3">
-              <div>
-                <img src="img/i2.png" />
+              <div class="flex items-center gap-4 mb-3">
+                <div>
+                  <img src="img/i2.png" />
+                </div>
+                <div>
+                  <p class="text-lg">Zeynab Jalalian</p>
+                  <button
+                    class="text-sm px-2 py-1 bg-blue-600 text-center rounded"
+                  >
+                    Join
+                  </button>
+                </div>
               </div>
-              <div>
-                <p class="text-lg">Zeynab Jalalian</p>
-                <button
-                  class="text-sm px-2 py-1 bg-blue-600 text-center rounded"
-                >
-                  Join
-                </button>
-              </div>
-            </div>
-            <div class="flex items-center gap-4 mb-3">
-              <div>
-                <img src="img/i2.png" />
-              </div>
-              <div>
-                <p class="text-lg">Zeynab Jalalian</p>
-                <button
-                  class="text-sm px-2 py-1 bg-blue-600 text-center rounded"
-                >
-                  Join
-                </button>
-              </div>
-            </div>
-            <div class="flex items-center gap-4 mb-3">
-              <div>
-                <img src="img/i2.png" />
-              </div>
-              <div>
-                <p class="text-lg">Zeynab Jalalian</p>
-                <button
-                  class="text-sm px-2 py-1 bg-blue-600 text-center rounded"
-                >
-                  Join
-                </button>
+              <div class="flex items-center gap-4 mb-3">
+                <div>
+                  <img src="img/i2.png" />
+                </div>
+                <div>
+                  <p class="text-lg">Zeynab Jalalian</p>
+                  <button
+                    class="text-sm px-2 py-1 bg-blue-600 text-center rounded"
+                  >
+                    Join
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -155,7 +161,7 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           <div class="col-span-1 bg-gray-800 w-full rounded">
             <img src="img/ii.webp" class="max-h-60 w-full object-cover" />
             <div class="p-6">
